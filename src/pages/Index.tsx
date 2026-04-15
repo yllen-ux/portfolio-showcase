@@ -1,4 +1,4 @@
-import { MessageCircle, ClipboardCheck, BookOpen, Brain, Heart, Star, ChevronRight, Sparkles } from "lucide-react";
+import { MessageCircle, ClipboardCheck, BookOpen, Brain, Heart, Star, ChevronRight, Sparkles, User } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
@@ -87,6 +87,30 @@ const Index = () => {
         <div className="absolute top-16 left-8 w-20 h-20 rounded-full bg-[hsl(var(--soft-sage)/0.3)] blur-2xl" />
         <div className="absolute top-32 right-12 w-28 h-28 rounded-full bg-[hsl(var(--soft-lavender)/0.3)] blur-2xl" />
         <div className="absolute bottom-10 left-1/4 w-16 h-16 rounded-full bg-[hsl(var(--soft-gold)/0.2)] blur-2xl" />
+      </section>
+
+      {/* Sobre Mim Section */}
+      <section className="bg-gradient-to-b from-background to-[hsl(var(--warm-cream))]">
+        <div className="max-w-5xl mx-auto px-6 py-20">
+          <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16">
+            <div className="shrink-0">
+              <div className="w-40 h-40 md:w-52 md:h-52 rounded-full bg-[hsl(var(--accent))] flex items-center justify-center shadow-md">
+                <User className="h-20 w-20 md:h-24 md:w-24 text-primary/60" />
+              </div>
+            </div>
+            <div className="text-center md:text-left">
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 font-heading">
+                Sobre Mim
+              </h2>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-3">
+                <strong className="text-foreground">[Seu Nome]</strong> — Psicopedagoga e Neuropsicopedagoga, com experiência em avaliação e intervenção de crianças e adolescentes.
+              </p>
+              <p className="text-base text-muted-foreground leading-relaxed">
+                Apaixonada por potencializar o desenvolvimento de cada indivíduo com ética, acolhimento e dedicação. Acredito que cada criança possui um potencial único, e meu trabalho é criar caminhos para que ele floresça.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Services Section */}
