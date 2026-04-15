@@ -1,4 +1,4 @@
-import { MessageCircle, ClipboardCheck, BookOpen, Brain, Heart, Star, ChevronRight, Sparkles } from "lucide-react";
+import { MessageCircle, ClipboardCheck, BookOpen, Brain, Heart, Star, ChevronRight, Sparkles, User } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
