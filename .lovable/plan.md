@@ -1,21 +1,20 @@
 
 
-## Alterações na Landing Page
+## Adicionar seção "Sobre Mim"
 
 ### O que será feito
 
-1. **Substituir o texto "Espaço AIOS" pela imagem do logo** no hero section — a imagem enviada será usada diretamente como logo no topo da página.
+Adicionar uma nova seção entre o **Hero** e os **Serviços** em `src/pages/Index.tsx` com:
 
-2. **Trocar as fontes** para se aproximar do estilo da imagem:
-   - **"Espaço"** na imagem usa uma fonte cursiva/script elegante — usaremos **Dancing Script** (Google Fonts) como equivalente web.
-   - **Subtítulo/corpo** na imagem usa uma sans-serif arredondada e suave — usaremos **Quicksand** (Google Fonts), que tem esse mesmo feeling leve e amigável.
-   - Remover Playfair Display e Nunito atuais.
+- Layout em duas colunas (mobile: empilhado): avatar/foto placeholder à esquerda, texto à direita
+- Avatar circular com ícone de placeholder (usando `User` do lucide-react)
+- Título "Sobre Mim" em Dancing Script
+- Texto placeholder com nome, formação e breve apresentação para edição posterior
+- Fundo com gradiente suave para diferenciar visualmente das outras seções
 
-### Arquivos editados
-- `src/index.css` — trocar imports de fontes
-- `src/pages/Index.tsx` — substituir o h1 textual pela imagem do logo, ajustar tamanho
-- Copiar a imagem do logo para `public/logo.jpeg`
+### Arquivo editado
+- `src/pages/Index.tsx` — nova seção + import do ícone `User`
 
-### Resultado
-O topo mostrará a logo original com a lâmpada/cérebro, e toda a página terá fontes mais próximas da identidade visual da imagem.
+### Texto placeholder
+> **[Seu Nome]** — Psicopedagoga e Neuropsicopedagoga, com experiência em avaliação e intervenção de crianças e adolescentes. Apaixonada por potencializar o desenvolvimento de cada indivíduo com ética, acolhimento e dedicação.
 
