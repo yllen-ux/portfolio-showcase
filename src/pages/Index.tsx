@@ -59,10 +59,11 @@ const Index = () => {
             Desenvolvimento integral de crianças e adolescentes
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-2 tracking-tight">
-            Espaço{" "}
-            <span className="text-primary">AIOS</span>
-          </h1>
+          <img
+            src="/logo.jpeg"
+            alt="Espaço AIOS"
+            className="mx-auto h-40 md:h-56 w-auto object-contain mb-2"
+          />
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-4 font-light">
             Atendimentos Psicopedagógicos e Neuropsicopedagógicos
