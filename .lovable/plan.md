@@ -1,31 +1,21 @@
 
 
-## Landing Page — Espaço AIOS
+## Alterações na Landing Page
 
-### Resumo
-Criar uma landing page sofisticada e acolhedora para o Espaço AIOS, com seções de serviços e contato via WhatsApp.
+### O que será feito
 
-### Estilo Visual
-- Paleta suave e acolhedora: tons pastéis (verde-água, lavanda, bege claro)
-- Tipografia clean e acessível
-- Cantos arredondados, sombras sutis, espaçamento generoso
-- Ícones ilustrativos para cada serviço
-- Inspirado na identidade visual da imagem enviada (logo AIOS com cores suaves)
+1. **Substituir o texto "Espaço AIOS" pela imagem do logo** no hero section — a imagem enviada será usada diretamente como logo no topo da página.
 
-### Estrutura da Página
+2. **Trocar as fontes** para se aproximar do estilo da imagem:
+   - **"Espaço"** na imagem usa uma fonte cursiva/script elegante — usaremos **Dancing Script** (Google Fonts) como equivalente web.
+   - **Subtítulo/corpo** na imagem usa uma sans-serif arredondada e suave — usaremos **Quicksand** (Google Fonts), que tem esse mesmo feeling leve e amigável.
+   - Remover Playfair Display e Nunito atuais.
 
-1. **Hero** — Logo/nome "Espaço AIOS", tagline "Atendimentos Psicopedagógicos e Neuropsicopedagógicos", botão WhatsApp
-2. **Serviços** — 3 cards:
-   - Avaliação Completa (com lista de itens)
-   - Dificuldades de Aprendizagem (com lista)
-   - Estímulo Cognitivo (com lista)
-3. **Diferencial** — Seção destacando o atendimento humanizado e o objetivo
-4. **CTA / Contato** — Botão flutuante do WhatsApp + seção final com chamada para agendamento
+### Arquivos editados
+- `src/index.css` — trocar imports de fontes
+- `src/pages/Index.tsx` — substituir o h1 textual pela imagem do logo, ajustar tamanho
+- Copiar a imagem do logo para `public/logo.jpeg`
 
-### Arquivos a criar/editar
-- `src/pages/Index.tsx` — página principal com todas as seções
-- `src/index.css` — ajuste da paleta de cores
-
-### Pergunta pendente
-Preciso do **número do WhatsApp** para configurar o botão. Usarei um placeholder `5511999999999` que você poderá trocar depois — ou me informe o número correto agora.
+### Resultado
+O topo mostrará a logo original com a lâmpada/cérebro, e toda a página terá fontes mais próximas da identidade visual da imagem.
 
