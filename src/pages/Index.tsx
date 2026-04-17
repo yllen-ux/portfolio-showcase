@@ -128,6 +128,59 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Sobre Mim Section */}
+      <section className="bg-gradient-to-b from-background to-[hsl(var(--warm-cream))]">
+        <div className="max-w-5xl mx-auto px-6 py-20">
+          <div className="flex flex-col md:flex-row items-start gap-10 md:gap-16">
+            <div className="shrink-0 mx-auto md:mx-0">
+              <div className="w-40 h-40 md:w-52 md:h-52 rounded-full bg-[hsl(var(--accent))] flex items-center justify-center shadow-md">
+                <User className="h-20 w-20 md:h-24 md:w-24 text-primary/60" />
+              </div>
+            </div>
+            <div className="text-center md:text-left">
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-2 font-heading">
+                Sobre Mim
+              </h2>
+              <p className="text-2xl md:text-3xl font-semibold text-primary mb-2 font-heading">
+                Yllen Canarines
+              </p>
+              <p className="text-sm text-muted-foreground mb-4">
+                Pedagoga | Professora | Psicopedagoga | Neuropsicopedagoga Clínica
+              </p>
+
+              <div className="inline-flex items-center gap-2 rounded-full bg-[hsl(var(--accent))] px-4 py-1.5 text-xs font-medium text-accent-foreground mb-6">
+                <Sparkles className="h-3.5 w-3.5 text-[hsl(var(--soft-gold))]" />
+                Graduanda em Análise do Comportamento Aplicada (ABA)
+              </div>
+
+              <div className="space-y-3 text-base text-muted-foreground leading-relaxed">
+                <p>
+                  Profissional da área da educação e desenvolvimento infantil, com atuação especializada em processos de aprendizagem, avaliação e intervenção psicopedagógica e neuropsicopedagógica clínica.
+                </p>
+                <p>
+                  Pedagoga e professora, com experiência no acompanhamento de crianças em suas necessidades educacionais e cognitivas, promovendo estratégias individualizadas para o fortalecimento das habilidades de aprendizagem, atenção, memória, linguagem e desenvolvimento socioemocional.
+                </p>
+                <p>
+                  Atua como Psicopedagoga e Neuropsicopedagoga Clínica, realizando atendimentos voltados à identificação e intervenção em dificuldades de aprendizagem, atrasos no desenvolvimento e estímulo das funções cognitivas.
+                </p>
+                <p>
+                  Atualmente, é graduanda em Análise do Comportamento Aplicada (ABA), com foco em intervenções para <strong className="text-foreground">Transtorno do Espectro Autista (TEA)</strong> e <strong className="text-foreground">Deficiência Intelectual</strong>, ampliando sua formação para oferecer um atendimento ainda mais especializado, humanizado e baseado em evidências.
+                </p>
+                <p>
+                  Comprometida com o desenvolvimento integral da criança, busca promover <strong className="text-foreground">autonomia</strong>, <strong className="text-foreground">aprendizagem significativa</strong> e qualidade de vida às famílias atendidas pelo Espaço AIOS.
+                </p>
+              </div>
+
+              <div className="mt-6 pt-4 border-t border-border/50 flex flex-wrap gap-x-4 gap-y-1 text-xs text-muted-foreground justify-center md:justify-start">
+                <span>Psicopedagogia — CBO: 2394-25</span>
+                <span>Neuropsicopedagogia Clínica — CBO: 2394-40</span>
+                <span>ABPp: 838</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Diferencial Section */}
       <section className="bg-gradient-to-b from-[hsl(var(--warm-cream))] to-background">
         <div className="max-w-4xl mx-auto px-6 py-20 text-center">
