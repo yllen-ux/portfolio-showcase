@@ -1,20 +1,36 @@
 
 
-## Adicionar seção "Sobre Mim"
+## Mover seção "Sobre Mim" para depois de "Nossos Atendimentos"
 
 ### O que será feito
 
-Adicionar uma nova seção entre o **Hero** e os **Serviços** em `src/pages/Index.tsx` com:
+Reorganizar a ordem das seções em `src/pages/Index.tsx`:
 
-- Layout em duas colunas (mobile: empilhado): avatar/foto placeholder à esquerda, texto à direita
-- Avatar circular com ícone de placeholder (usando `User` do lucide-react)
-- Título "Sobre Mim" em Dancing Script
-- Texto placeholder com nome, formação e breve apresentação para edição posterior
-- Fundo com gradiente suave para diferenciar visualmente das outras seções
+**Ordem atual:**
+1. Hero
+2. Sobre Mim
+3. Nossos Atendimentos
+4. Diferencial
+5. CTA
+
+**Nova ordem:**
+1. Hero
+2. Nossos Atendimentos
+3. Sobre Mim
+4. Diferencial
+5. CTA
+
+### Ajuste visual necessário
+
+Como a seção "Sobre Mim" atualmente usa `bg-gradient-to-b from-background to-[hsl(var(--warm-cream))]` e a seção "Diferencial" logo após usa `from-[hsl(var(--warm-cream))] to-background`, a transição de cores entre elas ficará natural — sem necessidade de ajustes adicionais no gradiente.
+
+Também aproveitarei para aplicar o conteúdo profissional da Yllen (já fornecido em mensagens anteriores) na seção, caso ainda não esteja aplicado, mantendo:
+- Nome: **Yllen Canarines**
+- Credenciais
+- Badge ABA
+- Parágrafos descritivos
+- Rodapé com registros (CBO 2394-25, CBO 2394-40, ABPp: 838)
 
 ### Arquivo editado
-- `src/pages/Index.tsx` — nova seção + import do ícone `User`
-
-### Texto placeholder
-> **[Seu Nome]** — Psicopedagoga e Neuropsicopedagoga, com experiência em avaliação e intervenção de crianças e adolescentes. Apaixonada por potencializar o desenvolvimento de cada indivíduo com ética, acolhimento e dedicação.
+- `src/pages/Index.tsx` — trocar ordem dos blocos `<section>`
 
