@@ -134,8 +134,13 @@ const Index = () => {
         <div className="max-w-5xl mx-auto px-6 py-20">
           <div className="flex flex-col md:flex-row items-start gap-10 md:gap-16">
             <div className="shrink-0 mx-auto md:mx-0">
-              <div className="w-40 h-40 md:w-52 md:h-52 rounded-full bg-[hsl(var(--accent))] flex items-center justify-center shadow-md">
-                <User className="h-20 w-20 md:h-24 md:w-24 text-primary/60" />
+              <div className="w-40 h-40 md:w-52 md:h-52 rounded-full overflow-hidden shadow-md ring-4 ring-[hsl(var(--accent))]">
+                <img
+                  src={yllenPhoto}
+                  alt="Yllen Canarines, psicopedagoga e neuropsicopedagoga clínica"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
               </div>
             </div>
             <div className="text-center md:text-left">
