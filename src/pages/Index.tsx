@@ -85,7 +85,7 @@ const Index = () => {
       {/* Hero Section */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--warm-cream))] to-background" />
-        <div className="relative max-w-5xl mx-auto px-6 pt-20 pb-24 text-center">
+        <div className="relative max-w-5xl mx-auto px-6 pt-16 pb-16 text-center">
           <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-[hsl(var(--accent))] px-4 py-2 text-sm font-medium text-accent-foreground">
             <Sparkles className="h-4 w-4 text-[hsl(var(--soft-gold))]" />
             Desenvolvimento integral de crianças e adolescentes
@@ -122,8 +122,8 @@ const Index = () => {
       </section>
 
       {/* Services Section */}
-      <section className="max-w-6xl mx-auto px-6 py-20">
-        <div className="text-center mb-16">
+      <section className="max-w-6xl mx-auto px-6 py-12">
+        <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             Nossos Atendimentos
           </h2>
@@ -162,8 +162,8 @@ const Index = () => {
 
       {/* Profissionais Section */}
       <section className="bg-gradient-to-b from-background to-[hsl(var(--warm-cream))]">
-        <div className="max-w-5xl mx-auto px-6 py-20">
-          <div className="text-center mb-14">
+        <div className="max-w-5xl mx-auto px-6 py-12">
+          <div className="text-center mb-10">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 font-heading">
               Profissionais
             </h2>
@@ -240,7 +240,7 @@ const Index = () => {
 
       {/* Diferencial Section */}
       <section className="bg-gradient-to-b from-[hsl(var(--warm-cream))] to-background">
-        <div className="max-w-4xl mx-auto px-6 py-20 text-center">
+        <div className="max-w-4xl mx-auto px-6 py-12 text-center">
           <div className="inline-flex items-center gap-2 mb-6">
             <Heart className="h-5 w-5 text-primary" />
             <Star className="h-5 w-5 text-[hsl(var(--soft-gold))]" />
@@ -262,7 +262,7 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="max-w-4xl mx-auto px-6 py-20 text-center">
+      <section className="max-w-4xl mx-auto px-6 py-12 text-center">
         <div className="rounded-3xl bg-card border border-border/50 shadow-sm p-10 md:p-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             Vamos conversar?
