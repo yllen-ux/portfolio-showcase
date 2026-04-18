@@ -6,6 +6,37 @@ import yllenPhoto from "@/assets/yllen.jpg";
 const WHATSAPP_NUMBER = "5511999999999";
 const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("Olá! Gostaria de saber mais sobre os atendimentos do Espaço AIOS.")}`;
 
+const professionals = [
+  {
+    name: "Yllen Canarines",
+    photo: yllenPhoto,
+    credentials: "Pedagoga | Professora | Psicopedagoga | Neuropsicopedagoga Clínica",
+    badge: "Graduanda em Análise do Comportamento Aplicada (ABA)",
+    bio: [
+      "Profissional da área da educação e desenvolvimento infantil, com atuação especializada em processos de aprendizagem, avaliação e intervenção psicopedagógica e neuropsicopedagógica clínica.",
+      "Pedagoga e professora, com experiência no acompanhamento de crianças em suas necessidades educacionais e cognitivas, promovendo estratégias individualizadas para o fortalecimento das habilidades de aprendizagem, atenção, memória, linguagem e desenvolvimento socioemocional.",
+      "Atua como Psicopedagoga e Neuropsicopedagoga Clínica, realizando atendimentos voltados à identificação e intervenção em dificuldades de aprendizagem, atrasos no desenvolvimento e estímulo das funções cognitivas.",
+    ],
+    bioHighlights: [
+      {
+        text: "Atualmente, é graduanda em Análise do Comportamento Aplicada (ABA), com foco em intervenções para ",
+        highlights: ["Transtorno do Espectro Autista (TEA)", " e ", "Deficiência Intelectual"],
+        suffix: ", ampliando sua formação para oferecer um atendimento ainda mais especializado, humanizado e baseado em evidências.",
+      },
+      {
+        text: "Comprometida com o desenvolvimento integral da criança, busca promover ",
+        highlights: ["autonomia", ", ", "aprendizagem significativa"],
+        suffix: " e qualidade de vida às famílias atendidas pelo Espaço AIOS.",
+      },
+    ],
+    registrations: [
+      "Psicopedagogia — CBO: 2394-25",
+      "Neuropsicopedagogia Clínica — CBO: 2394-40",
+      "ABPp: 838",
+    ],
+  },
+];
+
 const services = [
   {
     icon: ClipboardCheck,
