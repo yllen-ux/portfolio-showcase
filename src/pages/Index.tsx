@@ -145,7 +145,7 @@ const Index = () => {
             </div>
             <div className="text-center md:text-left">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-2 font-heading">
-                Sobre Mim
+                Profissionais
               </h2>
               <p className="text-2xl md:text-3xl font-semibold text-primary mb-2 font-heading">
                 Yllen Canarines
