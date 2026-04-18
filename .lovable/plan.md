@@ -1,36 +1,35 @@
 
 
-## Mover seção "Sobre Mim" para depois de "Nossos Atendimentos"
+## Ajustar seção "Profissionais" para suportar múltiplos profissionais
+
+### Contexto
+A seção atualmente exibe apenas a Yllen como "Sobre Mim" (já renomeada para "Profissionais"), mas precisa ser estruturada para acomodar mais profissionais no futuro.
 
 ### O que será feito
 
-Reorganizar a ordem das seções em `src/pages/Index.tsx`:
+Refatorar a seção em `src/pages/Index.tsx` para usar um **array de profissionais** renderizado em loop, mantendo o visual atual mas preparado para escalar.
 
-**Ordem atual:**
-1. Hero
-2. Sobre Mim
-3. Nossos Atendimentos
-4. Diferencial
-5. CTA
+### Estrutura proposta
 
-**Nova ordem:**
-1. Hero
-2. Nossos Atendimentos
-3. Sobre Mim
-4. Diferencial
-5. CTA
+1. **Cabeçalho da seção** (centralizado, acima dos cards):
+   - Título: "Profissionais" (font-heading, destaque)
+   - Subtítulo curto: "Conheça quem cuida do desenvolvimento do seu filho com dedicação e técnica."
 
-### Ajuste visual necessário
+2. **Array `professionals`** no topo do arquivo (junto com `services`), com campos:
+   - `name`, `photo`, `credentials`, `badge`, `bio` (array de parágrafos), `registrations` (array de strings)
 
-Como a seção "Sobre Mim" atualmente usa `bg-gradient-to-b from-background to-[hsl(var(--warm-cream))]` e a seção "Diferencial" logo após usa `from-[hsl(var(--warm-cream))] to-background`, a transição de cores entre elas ficará natural — sem necessidade de ajustes adicionais no gradiente.
+3. **Card de profissional** (renderizado em `.map()`):
+   - Layout atual de duas colunas (foto + texto) preservado para a Yllen
+   - Quando houver mais de 1 profissional, cada um fica em seu próprio bloco com `border-t` sutil separando
+   - No mobile: empilhado normalmente
+   - No desktop: mantém foto à esquerda e texto à direita
+   - Profissionais alternam lado da foto (esq/dir) opcionalmente para variação visual — **decisão**: manter sempre foto à esquerda para consistência e simplicidade
 
-Também aproveitarei para aplicar o conteúdo profissional da Yllen (já fornecido em mensagens anteriores) na seção, caso ainda não esteja aplicado, mantendo:
-- Nome: **Yllen Canarines**
-- Credenciais
-- Badge ABA
-- Parágrafos descritivos
-- Rodapé com registros (CBO 2394-25, CBO 2394-40, ABPp: 838)
+4. **Conteúdo da Yllen** mantido integralmente (nome, credenciais, badge ABA, 5 parágrafos, registros CBO/ABPp).
+
+### Vantagem
+Para adicionar um novo profissional no futuro, basta acrescentar um objeto ao array `professionals` — nenhuma mudança de JSX necessária.
 
 ### Arquivo editado
-- `src/pages/Index.tsx` — trocar ordem dos blocos `<section>`
+- `src/pages/Index.tsx` — extrair dados da Yllen para array, criar componente/loop interno de card de profissional, ajustar cabeçalho da seção
 
