@@ -2,6 +2,7 @@ import { MessageCircle, ClipboardCheck, BookOpen, Brain, Heart, Star, ChevronRig
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import yllenPhoto from "@/assets/yllen.jpg";
+import logoAios from "@/assets/logo-aios.png";
 
 const WHATSAPP_NUMBER = "5511999999999";
 const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("Olá! Gostaria de saber mais sobre os atendimentos do Espaço AIOS.")}`;
@@ -91,8 +92,12 @@ const Index = () => {
             Desenvolvimento integral de crianças e adolescentes
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-2 tracking-tight">
-            Espaço <span className="text-primary">AIOS</span>
+          <h1 className="mb-2 flex justify-center">
+            <img
+              src={logoAios}
+              alt="Espaço AIOS"
+              className="w-auto h-32 md:h-48 object-contain"
+            />
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-4 font-light">
