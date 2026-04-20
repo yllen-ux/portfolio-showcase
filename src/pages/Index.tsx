@@ -89,14 +89,14 @@ const Index = () => {
         <div className="relative max-w-5xl mx-auto px-6 pt-16 pb-16 text-center">
           <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-[hsl(var(--accent))] px-4 py-2 text-sm font-medium text-accent-foreground">
             <Sparkles className="h-4 w-4 text-[hsl(var(--soft-gold))]" />
-            Desenvolvimento integral de crianças e adolescentes
+            Desenvolvimento integral de crianças
           </div>
 
           <h1 className="mb-2 flex justify-center">
             <img
               src={logoAios}
               alt="Espaço AIOS"
-              className="w-auto h-32 md:h-48 object-contain"
+              className="w-auto h-44 md:h-64 object-contain"
             />
           </h1>
 
