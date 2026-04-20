@@ -92,13 +92,16 @@ const Index = () => {
             Desenvolvimento integral de crianças
           </div>
 
-          <h1 className="mb-2 flex justify-center">
+          <h1 className="sr-only">
+            Espaço AIOS — Psicopedagoga e Neuropsicopedagoga Clínica em Curitiba
+          </h1>
+          <div className="mb-2 flex justify-center" aria-hidden="true">
             <img
               src={logoAios}
-              alt="Espaço AIOS"
+              alt="Espaço AIOS — Clínica de Psicopedagogia e Neuropsicopedagogia em Curitiba"
               className="w-auto h-44 md:h-64 object-contain"
             />
-          </h1>
+          </div>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-4 font-light">
             Atendimentos Psicopedagógicos e Neuropsicopedagógicos
@@ -113,7 +116,12 @@ const Index = () => {
             className="rounded-full px-8 py-6 text-base font-semibold shadow-lg hover:shadow-xl transition-all duration-300 bg-[hsl(130,45%,42%)] hover:bg-[hsl(130,45%,36%)] text-white gap-3"
             asChild
           >
-            <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
+            <a
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Agendar atendimento psicopedagógico no Espaço AIOS via WhatsApp"
+            >
               <MessageCircle className="h-5 w-5" />
               Agendar Atendimento
             </a>
@@ -280,7 +288,12 @@ const Index = () => {
             className="rounded-full px-10 py-6 text-base font-semibold shadow-lg hover:shadow-xl transition-all duration-300 bg-[hsl(130,45%,42%)] hover:bg-[hsl(130,45%,36%)] text-white gap-3"
             asChild
           >
-            <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
+            <a
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Fale com o Espaço AIOS pelo WhatsApp"
+            >
               <MessageCircle className="h-5 w-5" />
               Fale Conosco no WhatsApp
             </a>
