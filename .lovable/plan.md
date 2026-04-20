@@ -1,25 +1,49 @@
 
 
-## Reduzir espaçamento vertical em todas as seções
+## Otimização de SEO para o Espaço AIOS
+
+### Dados confirmados
+- **Domínio:** espacoaios.com.br
+- **Localização:** Curitiba/PR
+- **Endereço:** Rua Buenos Aires, 444 — Curitiba/PR
+- **Telefone:** placeholder no código (mantém WhatsApp atual até você informar o real)
 
 ### O que será feito
 
-Aplicar redução leve (~30-40px) no padding vertical de todas as seções de `src/pages/Index.tsx`, deixando a página mais densa e fluida sem perder respiro.
+#### 1. `index.html` — Meta tags + Schema.org
+- **Title** otimizado: `Espaço AIOS — Psicopedagoga e Neuropsicopedagoga em Curitiba | Avaliação Infantil`
+- **Description** com palavras-chave fortes: avaliação neuropsicopedagógica, dificuldade de aprendizagem, TEA, TDAH, estímulo cognitivo, Curitiba + CTA
+- **Keywords** relevantes (psicopedagogia Curitiba, neuropsicopedagogia clínica, ABA, TEA, TDAH, dificuldade de aprendizagem infantil, Yllen Canarines)
+- **Canonical:** `https://espacoaios.com.br/`
+- **Robots meta:** `index, follow`
+- **Open Graph completo:** `og:url`, `og:site_name="Espaço AIOS"`, `og:locale="pt_BR"`, imagem
+- **JSON-LD Schema.org** (`MedicalBusiness`):
+  - Nome, endereço (Rua Buenos Aires, 444, Curitiba/PR, BR)
+  - Área atendida: Curitiba e região metropolitana
+  - Serviços: Avaliação Psicopedagógica, Avaliação Neuropsicopedagógica, Intervenção em Dificuldades de Aprendizagem, Estímulo Cognitivo
+  - Profissional vinculada (`Person`): Yllen Canarines com credenciais (CBO 2394-25, 2394-40, ABPp 838)
+  - URL e logo
 
-### Ajustes
+#### 2. `src/pages/Index.tsx` — SEO on-page
+- Adicionar **H1 textual oculto** (`sr-only`) com palavras-chave: "Espaço AIOS — Psicopedagoga e Neuropsicopedagoga Clínica em Curitiba"
+- Otimizar `alt` da logo: "Espaço AIOS — Clínica de Psicopedagogia e Neuropsicopedagogia em Curitiba"
+- `aria-label` nos botões de WhatsApp
 
-| Seção | Atual | Novo |
-|---|---|---|
-| Hero | `pt-20 pb-24` | `pt-16 pb-16` |
-| Services (`<section>`) | `py-20` | `py-12` |
-| Services (cabeçalho) | `mb-16` | `mb-12` |
-| Profissionais | `py-20` + `mb-14` | `py-12` + `mb-10` |
-| Diferencial | `py-20` | `py-12` |
-| CTA | `py-20` | `py-12` |
+#### 3. `public/robots.txt` — Apontar sitemap
+- Adicionar: `Sitemap: https://espacoaios.com.br/sitemap.xml`
 
-### Resultado
-Cada transição entre seções fica ~60-80px mais compacta. A página mantém hierarquia visual e respiro interno dos cards/conteúdo, mas elimina o "vazio" entre blocos.
+#### 4. `public/sitemap.xml` — Criar arquivo
+- Sitemap com home (`https://espacoaios.com.br/`), `lastmod` atual, `priority 1.0`
 
-### Arquivo editado
-- `src/pages/Index.tsx` — ajustar classes Tailwind de padding/margin nas 5 seções
+### Resultado esperado
+- Google entende que é uma clínica em **Curitiba** → rankeia em buscas locais ("psicopedagoga Curitiba", "avaliação neuropsicopedagógica Curitiba")
+- Rich results no Google (cartão de negócio com endereço)
+- Preview rico ao compartilhar no WhatsApp/Instagram
+- Indexação mais rápida via sitemap
+
+### Arquivos editados
+- `index.html` — meta tags + JSON-LD
+- `src/pages/Index.tsx` — H1 acessível + alts
+- `public/robots.txt` — referência ao sitemap
+- `public/sitemap.xml` — novo arquivo
 
