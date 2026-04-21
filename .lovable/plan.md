@@ -1,49 +1,36 @@
 
 
-## Otimização de SEO para o Espaço AIOS
+## Adicionar endereço físico completo no site
 
-### Dados confirmados
-- **Domínio:** espacoaios.com.br
-- **Localização:** Curitiba/PR
-- **Endereço:** Rua Buenos Aires, 444 — Curitiba/PR
-- **Telefone:** placeholder no código (mantém WhatsApp atual até você informar o real)
+### Endereço a exibir
+**R. Buenos Aires, 444 — Batel, Curitiba/PR, 80250-070 — 6º andar, Sala 61**
 
-### O que será feito
+### Onde apresentar
 
-#### 1. `index.html` — Meta tags + Schema.org
-- **Title** otimizado: `Espaço AIOS — Psicopedagoga e Neuropsicopedagoga em Curitiba | Avaliação Infantil`
-- **Description** com palavras-chave fortes: avaliação neuropsicopedagógica, dificuldade de aprendizagem, TEA, TDAH, estímulo cognitivo, Curitiba + CTA
-- **Keywords** relevantes (psicopedagogia Curitiba, neuropsicopedagogia clínica, ABA, TEA, TDAH, dificuldade de aprendizagem infantil, Yllen Canarines)
-- **Canonical:** `https://espacoaios.com.br/`
-- **Robots meta:** `index, follow`
-- **Open Graph completo:** `og:url`, `og:site_name="Espaço AIOS"`, `og:locale="pt_BR"`, imagem
-- **JSON-LD Schema.org** (`MedicalBusiness`):
-  - Nome, endereço (Rua Buenos Aires, 444, Curitiba/PR, BR)
-  - Área atendida: Curitiba e região metropolitana
-  - Serviços: Avaliação Psicopedagógica, Avaliação Neuropsicopedagógica, Intervenção em Dificuldades de Aprendizagem, Estímulo Cognitivo
-  - Profissional vinculada (`Person`): Yllen Canarines com credenciais (CBO 2394-25, 2394-40, ABPp 838)
-  - URL e logo
+**1. Footer (rodapé) — local principal**
+Hoje o rodapé só tem o copyright. Vou adicionar acima dele um bloco com:
+- Ícone `MapPin` + endereço completo em uma linha legível
+- Link clicável que abre no Google Maps em nova aba
+- Centralizado, mesmo estilo discreto do copyright
 
-#### 2. `src/pages/Index.tsx` — SEO on-page
-- Adicionar **H1 textual oculto** (`sr-only`) com palavras-chave: "Espaço AIOS — Psicopedagoga e Neuropsicopedagoga Clínica em Curitiba"
-- Otimizar `alt` da logo: "Espaço AIOS — Clínica de Psicopedagogia e Neuropsicopedagogia em Curitiba"
-- `aria-label` nos botões de WhatsApp
+**2. Seção "Vamos conversar?" (CTA final)**
+Adicionar uma linha pequena abaixo do botão do WhatsApp com o endereço, para que quem está prestes a agendar já veja onde fica a clínica.
 
-#### 3. `public/robots.txt` — Apontar sitemap
-- Adicionar: `Sitemap: https://espacoaios.com.br/sitemap.xml`
+**3. SEO — `index.html` (JSON-LD Schema.org)**
+Atualizar o `PostalAddress` do `MedicalBusiness` com os dados completos:
+- `streetAddress`: "Rua Buenos Aires, 444 — 6º andar, Sala 61"
+- `addressLocality`: "Curitiba"
+- `addressRegion`: "PR"
+- `postalCode`: "80250-070"
+- `addressCountry`: "BR"
+- Adicionar `"@type": "Place"` com `name: "Batel"` no bairro (via campo `addressLocality` estendido ou nota no `description`)
 
-#### 4. `public/sitemap.xml` — Criar arquivo
-- Sitemap com home (`https://espacoaios.com.br/`), `lastmod` atual, `priority 1.0`
-
-### Resultado esperado
-- Google entende que é uma clínica em **Curitiba** → rankeia em buscas locais ("psicopedagoga Curitiba", "avaliação neuropsicopedagógica Curitiba")
-- Rich results no Google (cartão de negócio com endereço)
-- Preview rico ao compartilhar no WhatsApp/Instagram
-- Indexação mais rápida via sitemap
+Isso ajuda o Google a exibir o cartão de negócio local com o endereço correto e completo.
 
 ### Arquivos editados
-- `index.html` — meta tags + JSON-LD
-- `src/pages/Index.tsx` — H1 acessível + alts
-- `public/robots.txt` — referência ao sitemap
-- `public/sitemap.xml` — novo arquivo
+- `src/pages/Index.tsx` — bloco de endereço no footer + linha no CTA
+- `index.html` — atualizar Schema.org com CEP, complemento e bairro
+
+### Resultado
+O endereço fica visível em dois pontos estratégicos (footer e CTA final), com link direto para o Google Maps, e o Google passa a entender a localização exata da clínica para buscas locais ("psicopedagoga Batel Curitiba").
 
