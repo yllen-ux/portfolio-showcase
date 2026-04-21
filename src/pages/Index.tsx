@@ -312,16 +312,6 @@ const Index = () => {
 
       {/* Footer */}
       <footer className="border-t border-border/50 py-8 text-center px-6">
-        <a
-          href="https://www.google.com/maps/search/?api=1&query=R.+Buenos+Aires%2C+444+-+Batel%2C+Curitiba+-+PR%2C+80250-070"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors mb-3"
-          aria-label="Ver endereço do Espaço AIOS no Google Maps"
-        >
-          <MapPin className="h-4 w-4" />
-          R. Buenos Aires, 444 — Batel, Curitiba/PR, 80250-070 · 6º andar, Sala 61
-        </a>
         <p className="text-sm text-muted-foreground">
           © {new Date().getFullYear()} Espaço AIOS — Atendimentos Psicopedagógicos e Neuropsicopedagógicos
         </p>
