@@ -198,7 +198,7 @@ const Index = () => {
                     <img
                       src={pro.photo}
                       alt={`${pro.name}, ${pro.credentials}`}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover scale-125"
                       loading="lazy"
                     />
                   </div>
