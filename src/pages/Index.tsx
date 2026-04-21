@@ -269,7 +269,7 @@ const Index = () => {
           </p>
 
           <p className="text-base text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Nosso objetivo é promover o desenvolvimento das potencialidades de cada indivíduo, favorecendo a <strong className="text-foreground">aprendizagem</strong>, a <strong className="text-foreground">autoestima</strong> e a <strong className="text-foreground">autonomia</strong>.
+            Nosso objetivo é promover o desenvolvimento das potencialidades de cada indivíduo, favorecendo a <strong className="text-foreground">aprendizagem</strong>, a <strong className="text-foreground">autoconfiança</strong> e a <strong className="text-foreground">autonomia</strong>.
           </p>
         </div>
       </section>
