@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import yllenPhoto from "@/assets/yllen.jpg";
 import logoAios from "@/assets/logo-aios.png";
 
-const WHATSAPP_NUMBER = "5511999999999";
+const WHATSAPP_NUMBER = "5541996439104";
 const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("Olá! Gostaria de saber mais sobre os atendimentos do Espaço AIOS.")}`;
 
 const professionals = [
