@@ -1,4 +1,4 @@
-import { MessageCircle, ClipboardCheck, BookOpen, Brain, Heart, Star, ChevronRight, Sparkles, MapPin } from "lucide-react";
+import { MessageCircle, ClipboardCheck, BookOpen, Brain, Heart, Star, ChevronRight, Sparkles, MapPin, Mail } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import yllenPhoto from "@/assets/yllen.jpg";
@@ -6,6 +6,8 @@ import logoAios from "@/assets/logo-aios.png";
 
 const WHATSAPP_NUMBER = "5541996439104";
 const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("Olá! Gostaria de saber mais sobre os atendimentos do Espaço AIOS.")}`;
+const CONTACT_EMAIL = "contato@espacoaios.com.br";
+const EMAIL_URL = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent("Contato - Espaço AIOS")}`;
 
 const professionals = [
   {
@@ -298,6 +300,15 @@ const Index = () => {
               Fale Conosco no WhatsApp
             </a>
           </Button>
+          <p className="mt-6 text-sm text-muted-foreground">
+            ou envie um e-mail:{" "}
+            <a
+              href={EMAIL_URL}
+              className="text-primary hover:underline font-medium"
+            >
+              {CONTACT_EMAIL}
+            </a>
+          </p>
         </div>
       </section>
 
@@ -312,6 +323,14 @@ const Index = () => {
         >
           <MapPin className="h-4 w-4" />
           R. Buenos Aires, 444 — Batel, Curitiba/PR, 80250-070 · 6º andar, Sala 61
+        </a>
+        <a
+          href={EMAIL_URL}
+          className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors mb-3 ml-0 sm:ml-4"
+          aria-label="Enviar e-mail para o Espaço AIOS"
+        >
+          <Mail className="h-4 w-4" />
+          {CONTACT_EMAIL}
         </a>
         <p className="text-sm text-muted-foreground">
           © {new Date().getFullYear()} Espaço AIOS — Atendimentos Psicopedagógicos e Neuropsicopedagógicos
